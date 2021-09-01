@@ -1,0 +1,98 @@
+// MANDATORY
+.btn {
+    border-radius: 4px;
+    text-align: center;
+}
+
+// SIZE
+.btn__round {
+    border-radius: 50%;
+}
+
+.btn--large {
+    padding: 14px 16px;
+}
+
+.btn--med {
+    padding: 10px 12px;
+}
+
+.btn--small {
+    padding: 7px 8px;
+}
+
+// TYPE
+.btn__primary {
+    background-color: $clr-primary;
+    &:hover {
+        background-color: $clr-primary-dark;
+    }
+    &:disabled {
+        background-color: #e0e4eb;
+    }
+}
+
+.btn__secondary {
+    background-color: #e3e8f0;
+    &:hover {
+        background-color: #bbcadf;
+    }
+    &:disabled {
+        background-color: #e0e4eb;
+    }
+}
+
+.btn__outline--primary {
+    border: 1px solid $clr-primary;
+    &:hover {
+        background-color: #d4e3ff80;
+    }
+    &:disabled {
+        background-color: $clr-white;
+        border: 1px solid #abb8ca;
+    }
+}
+
+.btn__outline {
+    border: 1px solid #e3e8f0;
+    &:hover {
+        background: #f3f5f9;
+        border: 1px solid #e3e8f0;
+    }
+    &:disabled {
+        background-color: $clr-white;
+        border: 1px solid #abb8ca;
+    }
+}
+
+.btn__soft--primary {
+    background-color: #d4e3ff80;
+    &:hover {
+        background-color: $clr-primary;
+    }
+    &:disabled {
+        background: #c8cfda33;
+    }
+}
+
+.btn__soft {
+    background-color: #f3f5f9;
+    &:hover {
+        background-color: #e3e8f0;
+    }
+    &:disabled {
+        background: #c8cfda33;
+    }
+}
+
+.btn__text--primary {
+    &:hover {
+        background-color: #d4e3ff80;
+    }
+}
+
+.btn__text {
+    &:hover {
+        background-color: #f3f5f9;
+    }
+}

@@ -1,0 +1,46 @@
+.flex {
+    display: flex;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alignCenter {
+    display: flex;
+    align-items: center;
+}
+
+.justifyCenter {
+    display: flex;
+    justify-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.gridCenter {
+    display: grid;
+    place-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.m-center {
+    margin: 0 auto;
+}

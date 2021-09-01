@@ -1,0 +1,107 @@
+// MAIN COLOR
+$clr-primary: #2773ff;
+$clr-primary-dark: #14296b;
+$clr-secondary: #829dc3;
+$clr-purple: #6e55ff;
+$clr-success: #16c79a;
+$clr-error: #f05454;
+$clr-warning: #ffc453;
+$clr-text: #0f2744;
+$clr-disabled: #e0e4eb;
+
+// OTHER COLOR
+$clr-tooltip: #2d343d;
+$clr-line: #c1c7cf;
+$clr-divider: #e6eaee;
+$clr-hover: #f7f8fa;
+$clr-white: #ffffff;
+
+// CONTROL COLOR
+$clr-control-hover: #c7ced4;
+$clr-control-resting: #e3e7eb;
+$clr-control-disabled: #eef1f4;
+
+// INPUT COLOR
+$clr-input-hover: #e9ebef;
+$clr-input-resting: #f4f5f8;
+$clr-input-disabled: #f7f8fa;
+
+.clr-white {
+    color: $clr-white;
+}
+
+.bg-white {
+    background-color: $clr-white;
+}
+
+.clr-primary {
+    color: $clr-primary;
+}
+
+.bg-primary {
+    background-color: $clr-primary;
+}
+
+.clr-primaryDark {
+    color: $clr-primary-dark;
+}
+
+.bg-primaryDark {
+    background-color: $clr-primary-dark;
+}
+
+.clr-secondary {
+    color: $clr-secondary;
+}
+
+.bg-secondary {
+    background-color: $clr-secondary;
+}
+
+.clr-purple {
+    color: $clr-purple;
+}
+
+.bg-purple {
+    background-color: $clr-purple;
+}
+
+.clr-success {
+    color: $clr-success;
+}
+
+.bg-success {
+    background-color: $clr-success;
+}
+
+.clr-warning {
+    color: $clr-warning;
+}
+
+.bg-warning {
+    background-color: $clr-warning;
+}
+
+.clr-error {
+    color: $clr-error;
+}
+
+.bg-error {
+    background-color: $clr-error;
+}
+
+.clr-text {
+    color: $clr-text;
+}
+
+.bg-text {
+    background-color: $clr-text;
+}
+
+.clr-disabled {
+    color: $clr-disabled;
+}
+
+.bg-disabled {
+    background-color: $clr-disabled;
+}

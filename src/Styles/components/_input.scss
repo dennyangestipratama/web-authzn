@@ -1,0 +1,13 @@
+.input {
+    position: relative;
+    border: 2px solid #ebeaed;
+    padding: 12px 24px;
+    border-radius: 100px;
+
+    &::placeholder {
+        color: $clr-text;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
