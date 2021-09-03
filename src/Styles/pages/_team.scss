@@ -1,0 +1,58 @@
+.team {
+    padding: 100px 115px;
+}
+
+.team__img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+}
+
+.team h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 31px;
+}
+
+.team p {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 70px;
+}
+
+.team__person > img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-bottom: 17px;
+}
+
+.team__person h5 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 8.5px;
+}
+
+.team__person h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.team__person .social-media {
+    a:not(:last-child) {
+        margin-right: 20px;
+    }
+}

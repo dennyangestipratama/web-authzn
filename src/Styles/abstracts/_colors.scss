@@ -9,6 +9,11 @@ $clr-warning: #ffc453;
 $clr-text: #0f2744;
 $clr-disabled: #e0e4eb;
 
+// SECONDARY COLOR
+$clr-red: #e40066;
+$clr-orange: #fb4d3d;
+$clr-green: #03cea4;
+
 // OTHER COLOR
 $clr-tooltip: #2d343d;
 $clr-line: #c1c7cf;
@@ -104,4 +109,14 @@ $clr-input-disabled: #f7f8fa;
 
 .bg-disabled {
     background-color: $clr-disabled;
+}
+
+.clr-red {
+    color: $clr-red;
+}
+.clr-orange {
+    color: $clr-orange;
+}
+.clr-green {
+    color: $clr-green;
 }

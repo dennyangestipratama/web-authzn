@@ -1,6 +1,8 @@
 import Device from "@Image/bg-device.png";
 
 export default function Info() {
+  var a = 47;
+  console.log(" Value of a= " + a);
   return (
     <section className="info">
       <h5 className="clr-primaryDark">
