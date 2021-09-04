@@ -1,0 +1,123 @@
+.signup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+.signup__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.signup__form {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 58px 50px;
+}
+
+.signup__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__input svg {
+    path {
+        fill: $clr-primary-dark;
+    }
+}
+
+.signup__dropdown {
+    margin-left: 30px;
+    cursor: pointer;
+    > div {
+        border: 2px solid #ebeaed;
+        border-radius: 100px;
+        padding: 12px 24px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #14296b;
+    }
+
+    svg {
+        margin-left: 30px;
+    }
+}
+
+.signup label {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #14296b;
+    margin-bottom: 6px;
+}
+
+.signup__input input {
+    margin-bottom: 35px;
+    border: 2px solid #ebeaed;
+    border-radius: 100px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(21, 20, 57, 0.4);
+    padding: 12px 24px;
+
+    &:focus {
+        border-color: $clr-primary-dark;
+    }
+}
+
+.signup__input textarea {
+    padding: 13px 19px;
+    border: 2px solid #ebeaed;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(21, 20, 57, 0.4);
+
+    &:focus {
+        border-color: $clr-primary-dark;
+    }
+}
+
+.signup__btn {
+    display: flex;
+    justify-content: flex-end;
+    button {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 12px 30px;
+
+        &:first-of-type {
+            margin-right: 8px;
+        }
+    }
+}
+
+.border__primary {
+    border-color: $clr-primary-dark !important;
+}

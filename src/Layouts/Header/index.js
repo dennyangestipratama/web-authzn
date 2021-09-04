@@ -17,7 +17,7 @@ export default function Header() {
       </nav>
       <nav className="header__auth alignCenter">
         <Nav label="Login" />
-        <NavButton label="Sign Up" />
+        <NavButton label="Sign Up" to="/signup" />
       </nav>
     </header>
   );

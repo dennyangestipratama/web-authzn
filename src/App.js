@@ -10,6 +10,7 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/signup" component={Home} />
       </Switch>
       <Footer />
     </Router>
