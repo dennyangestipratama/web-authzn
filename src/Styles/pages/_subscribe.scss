@@ -20,6 +20,10 @@
         content: url("../../Assets/Image/bg-subs-right.png");
         opacity: 0.15;
     }
+
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
 
 .subscribe__form {

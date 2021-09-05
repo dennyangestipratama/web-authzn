@@ -1,8 +1,14 @@
 .header {
     padding: 30px 115px;
+    @include respondTo(tablet) {
+        padding: 24px 17px;
+    }
 }
 
 .header__nav {
+    @include respondTo(tablet) {
+        display: none;
+    }
     a:nth-of-type(2) {
         margin: 0 30px;
     }
@@ -15,6 +21,9 @@
 }
 
 .header__auth {
+    @include respondTo(tablet) {
+        display: none;
+    }
     a:first-of-type {
         margin-right: 30px;
     }

@@ -7,6 +7,10 @@
 
     display: grid;
     place-items: center;
+
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
 
 .signup__bg {

@@ -7,6 +7,10 @@ footer {
     align-items: baseline;
     justify-content: center;
     padding: 20px 215px 95px;
+
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
 
 .footer__link {

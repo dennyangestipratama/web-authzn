@@ -1,5 +1,8 @@
 .answer {
     padding: 94px 112px;
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
 
 .answer h3 {

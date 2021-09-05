@@ -1,5 +1,9 @@
 .team {
     padding: 100px 115px;
+
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
 
 .team__img {
