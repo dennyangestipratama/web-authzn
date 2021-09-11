@@ -1,7 +1,9 @@
 .answer {
     padding: 94px 112px;
+
     @include respondTo(tablet) {
-        display: none;
+        display: block;
+        padding: 94px 43px;
     }
 }
 
@@ -12,12 +14,28 @@
     line-height: 52px;
     letter-spacing: -0.4px;
     margin-bottom: 50px;
+    
+    @include respondTo(tablet) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: -0.4px;
+        color: #14296B;
+    }
 }
 
 .answer__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 118px 30px;
+
+    @include respondTo(tablet) {
+        display: block;
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 .answer__content h5 {
@@ -26,6 +44,10 @@
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 10px;
+
+    @include respondTo(tablet) {
+        text-align: center;
+    }
 }
 
 .answer__content p {
@@ -34,4 +56,9 @@
     font-size: 16px;
     line-height: 26px;
     color: rgba(21, 20, 57, 0.4);
+
+    @include respondTo(tablet) {
+        text-align: center;
+        margin-bottom: 24px;
+    }
 }
