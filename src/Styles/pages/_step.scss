@@ -12,7 +12,7 @@
     }
 
     @include respondTo(tablet) {
-        display: none;
+        padding: 76px 43px;
     }
 }
 
@@ -23,11 +23,27 @@
     line-height: 52px;
     letter-spacing: -0.4px;
     margin-bottom: 84px;
+
+    @include respondTo(tablet) {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: -0.4px;
+        color: #14296B;
+    }
 }
+
 
 .step button {
     padding: 12px 32px;
     border-radius: 100px;
+
+    @include respondTo(tablet) {
+        margin-left: 5rem;
+    }
 }
 
 .step__information {
@@ -46,6 +62,14 @@
         top: 0;
         left: 1.5%;
         z-index: -1;
+
+        @include respondTo(tablet) {
+            display: none
+        }
+    }
+
+    @include respondTo(tablet) {
+        display: block;
     }
 }
 
@@ -55,6 +79,10 @@
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 20px;
+
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
 
 .step__information p {
@@ -63,6 +91,11 @@
     font-size: 16px;
     line-height: 26px;
     color: rgba(21, 20, 57, 0.4);
+
+    @include respondTo(tablet) {
+        text-align: center;
+        margin-bottom: 33px;
+    }
 }
 
 .illustration {
@@ -71,6 +104,28 @@
 
     div {
         margin-left: 31px;
+    }
+
+    .title {
+        display: none;
+
+        @include respondTo(tablet) {
+            display: flex;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            justify-content: center;
+        }
+    }
+
+    @include respondTo(tablet) {
+        display: block;
+        margin-bottom: 9px;
+        margin-top: 0px;
+        img {
+           margin-left: 5.5rem;
+           margin-bottom: 14px;
+        }
     }
 }
 
@@ -92,7 +147,53 @@
     display: grid;
     place-items: center;
     margin-top: -5px;
+
+    @include respondTo(tablet) {
+        display: none;
+    }
 }
+
+.step__num_mobile {
+    display: none;
+    @include respondTo(tablet) {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: rgba(21, 20, 57, 0.4);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-top: -5px;
+        background: #EBEAED;
+    }
+}
+
+.top__body_tag {
+    display: none; 
+
+    @include respondTo(tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 27px;
+    }
+
+    .top__body__title {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #14296B;
+        margin-left: 12px;
+    }
+}
+
 
 .step__num.blue {
     background: #d1e1fd;
