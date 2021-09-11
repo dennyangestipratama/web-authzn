@@ -6,7 +6,7 @@
 
     @include respondTo(tablet) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 29px 65px;
+        padding: 29px 29px;
     }
 }
 
@@ -58,6 +58,7 @@
     @include respondTo(tablet) {
         opacity: 0.7;
         text-align: center;
+        color: rgba(21, 20, 57, 0.4);
     }
 }
 
