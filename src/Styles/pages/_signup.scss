@@ -8,9 +8,9 @@
     display: grid;
     place-items: center;
 
-    @include respondTo(tablet) {
-        display: none;
-    }
+    // @include respondTo(tablet) {
+    //     display: none;
+    // }
 }
 
 .signup__bg {
@@ -27,6 +27,19 @@
     background: #ffffff;
     border-radius: 10px;
     padding: 58px 50px;
+
+    @include respondTo(tablet) {
+        width: 363px;
+    }
+
+}
+
+.signup__top__body {
+    display: flex;
+    
+    @include respondTo(tablet) {
+        display: block;
+    }
 }
 
 .signup__input {
@@ -57,6 +70,12 @@
 
     svg {
         margin-left: 30px;
+    }
+
+    @include respondTo(tablet) {
+        margin-left: 0px;
+        margin-bottom: 24px;
+        width: 140px;
     }
 }
 

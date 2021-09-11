@@ -12,7 +12,7 @@ export default function Signup() {
         <div className="signup__bg"></div>
       </Link>
       <form className="signup__form" method="post">
-        <div className="flex">
+        <div className="signup__top__body">
           <div className="signup__input">
             <label>Your Name</label>
             <input type="text" name="name" placeholder="First Name" />
