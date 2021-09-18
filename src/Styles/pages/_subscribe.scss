@@ -22,7 +22,7 @@
     }
 
     @include respondTo(tablet) {
-        display: none;
+        padding: 71px 43px;
     }
 }
 
@@ -33,6 +33,10 @@
     align-items: center;
     justify-content: center;
     margin: 40px 0 56px;
+
+    @include respondTo(tablet) {
+        display: block;
+    }
 }
 
 .subscribe__form input {
@@ -46,6 +50,10 @@
     font-size: 20px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.4);
+
+    @include respondTo(tablet) {
+        margin-bottom: 24px;
+    }
 }
 
 .subscribe__form button {
@@ -63,6 +71,10 @@
     &:hover {
         background: hsl(173, 71%, 60%);
     }
+
+    @include respondTo(tablet) {
+        width: 100%;
+    }
 }
 
 .subscribe h3 {
@@ -72,6 +84,10 @@
     line-height: 52px;
     text-align: center;
     letter-spacing: -0.4px;
+
+    @include respondTo(tablet) {
+        font-size: 28px;
+    }
 }
 
 .subscribe p {
