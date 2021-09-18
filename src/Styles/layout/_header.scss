@@ -29,6 +29,14 @@
     }
 }
 
+.header__auth__svg {
+    display: none; 
+
+    @include respondTo(tablet) {
+        display: block;
+    }
+}
+
 .nav__btn {
     border: 2px solid #ebeaed;
     padding: 9px 22px;
