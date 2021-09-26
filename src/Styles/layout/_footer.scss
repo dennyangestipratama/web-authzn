@@ -9,7 +9,8 @@ footer {
     padding: 20px 215px 95px;
 
     @include respondTo(tablet) {
-        display: none;
+        padding: 64px 34px;
+        display: block;
     }
 }
 
@@ -20,6 +21,12 @@ footer {
     a:not(:last-of-type) {
         margin-bottom: 10px;
     }
+}
+
+.footer__section {
+    
+     display: flex;
+     row-gap: 50px;
 }
 
 .footer__logo {
@@ -36,6 +43,10 @@ footer {
     }
     svg:not(:last-child) {
         margin-right: 35px;
+    }
+
+    @include respondTo(tablet) {
+       margin-bottom: 2rem;
     }
 }
 
