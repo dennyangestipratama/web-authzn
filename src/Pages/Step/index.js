@@ -48,7 +48,7 @@ export default function Step() {
 
                   <div>
                      <h5 className='clr-primaryDark'>Illustration</h5>
-                     <p>This is a content of the steps. Can be up to three lines. </p>
+                     <p style={{ marginRight: '2rem' }}>This is a content of the steps. Can be up to three lines. </p>
                   </div>
                </div>
             </div>
