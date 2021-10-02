@@ -1,18 +1,20 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Home from "@Pages";
-import Footer from "@Layouts/Footer";
-import Header from "@Layouts/Header";
+import Home from '@Pages'
+import Footer from '@Layouts/Footer'
+import Header from '@Layouts/Header'
 
 export default function App() {
-  return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/signup" component={Home} />
-      </Switch>
-      <Footer />
-    </Router>
-  );
+   return (
+      <Router>
+         <Header />
+         <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/signup' component={Home} />
+            <Route exact path='/login' component={Home} />
+            <Route exact path='/contact' component={Home} />
+         </Switch>
+         <Footer />
+      </Router>
+   )
 }

@@ -126,3 +126,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+#root {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

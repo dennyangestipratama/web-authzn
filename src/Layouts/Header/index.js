@@ -17,11 +17,11 @@ export default function Header() {
             <Nav label='About' />
          </nav>
          <nav className='header__auth alignCenter'>
-            <Nav label='Login' />
+            <Nav label='Login' to='/login' />
             <NavButton label='Sign Up' to='/signup' />
          </nav>
          <nav className='header__auth__svg'>
-            <Link to={'/signup'}>
+            <Link to='/signup'>
                <BarNav />
             </Link>
          </nav>
