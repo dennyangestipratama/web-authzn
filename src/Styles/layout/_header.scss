@@ -31,10 +31,6 @@
 
 .header__auth__svg {
     display: none; 
-
-    @include respondTo(tablet) {
-        display: block;
-    }
 }
 
 .nav__btn {
