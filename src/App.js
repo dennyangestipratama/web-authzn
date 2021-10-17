@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import { LinkTo } from './Utils/Link'
 
 import Home from '@Pages'
 import Footer from '@Layouts/Footer'
@@ -9,10 +10,10 @@ export default function App() {
       <Router>
          <Header />
          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/signup' component={Home} />
-            <Route exact path='/login' component={Home} />
-            <Route exact path='/contact' component={Home} />
+            <Route exact path={LinkTo.HOME} component={Home} />
+            <Route exact path={LinkTo.SIGNUP} component={Home} />
+            <Route exact path={LinkTo.LOGIN} component={Home} />
+            <Route exact path={LinkTo.CONTACT} component={Home} />
          </Switch>
          <Footer />
       </Router>

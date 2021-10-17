@@ -1,4 +1,6 @@
 import { Route, Switch } from 'react-router'
+import { LinkTo } from '../Utils/Link'
+
 import Answer from './Answer'
 import Hero from './Hero'
 import Info from './Info'
@@ -19,7 +21,7 @@ export default function Home() {
          <Team />
          <Subscribe />
          <Switch>
-            <Route path='/contact' component={Contact} />
+            <Route path={LinkTo.CONTACT} component={Contact} />
          </Switch>
       </section>
    )

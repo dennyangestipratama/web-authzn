@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import { Content } from '../../Utils/Content'
+import { LinkTo } from '../../Utils/Link'
 import { ReactComponent as Logo } from '@Icon/logo.svg'
 import { ReactComponent as LogoFont } from '@Icon/logo-font.svg'
 import { ReactComponent as BarNav } from '@Icon/icon-bar-right.svg'
@@ -12,16 +14,16 @@ export default function Header() {
             <LogoFont />
          </section>
          <nav className='header__nav alignCenter'>
-            <Nav label='How it Works' />
-            <Nav label='Pricing' />
-            <Nav label='About' />
+            <Nav label={Content.nav.howItWorks} />
+            <Nav label={Content.nav.pricing} />
+            <Nav label={Content.nav.about} />
          </nav>
          <nav className='header__auth alignCenter'>
-            <Nav label='Login' to='/login' />
-            <NavButton label='Sign Up' to='/signup' />
+            <Nav label={Content.nav.login} to={LinkTo.LOGIN} />
+            <NavButton label={Content.nav.SIGNUP} to={LinkTo.SIGNUP} />
          </nav>
          <nav className='header__auth__svg'>
-            <Link to='/signup'>
+            <Link to={LinkTo.SIGNUP}>
                <BarNav />
             </Link>
          </nav>

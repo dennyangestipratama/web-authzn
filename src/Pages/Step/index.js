@@ -1,73 +1,64 @@
 import Illustration from '@Image/illustration.png'
+import { Content } from '../../Utils/content'
 
 export default function Step() {
    return (
       <section className='step'>
          <h3>
-            <span className='clr-primaryDark'>Easy as </span>
-            <span className='clr-primary'>one</span>
-            <span className='clr-primaryDark'>,</span>
-            <span className='clr-orange'>two</span>
-            <span className='clr-primaryDark'>,</span>
-            <span className='clr-red'>three</span>
-            <span className='clr-primaryDark'>...</span>
+            <span className='clr-primaryDark'>{Content.step.title}</span>
+            <span className='clr-primary'>{Content.number.one}</span>
+            <span className='clr-primaryDark'>{Content.char.comma}</span>
+            <span className='clr-orange'>{Content.number.two}</span>
+            <span className='clr-primaryDark'>{Content.char.comma}</span>
+            <span className='clr-red'>{Content.number.three}</span>
+            <span className='clr-primaryDark'>{Content.char.dots}</span>
          </h3>
          <div className='step__information'>
             <div className='top__body_tag'>
-               <div className='step__num_mobile'>1</div>
-               <div className='top__body__title'>First Step</div>
+               <div className='step__num_mobile'>{Content.number.one}</div>
+               <div className='top__body__title'>{Content.number.firstStep}</div>
             </div>
             {/* SEPAREATE COMPONENT MOBILE VIIEW */}
-            <div className='step__num blue'>1</div>
+            <div className='step__num blue'>{Content.number.one}</div>
             <div>
-               <h5 className='clr-primaryDark'>First Step</h5>
-               <p>
-                  This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up to
-                  three lines. This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up to three lines. This is a content of the steps.
-                  Can be up to three lines.
-               </p>
+               <h5 className='clr-primaryDark'>{Content.number.firstStep}</h5>
+               <p>{Content.step.firstStepContent}</p>
             </div>
 
             <div className='top__body_tag'>
-               <div className='step__num_mobile'>2</div>
-               <div className='top__body__title'>Second Step</div>
+               <div className='step__num_mobile'>{Content.number.two}</div>
+               <div className='top__body__title'>{Content.number.secondStep}</div>
             </div>
             {/* SEPAREATE COMPONENT MOBILE VIIEW */}
-            <div className='step__num orange'>2</div>
+            <div className='step__num orange'>{Content.number.two}</div>
             <div>
                <div>
-                  <h5 className='clr-primaryDark'>Second Step</h5>
-                  <p>
-                     This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up
-                     to three lines. This is a content of the steps. Can be up to three lines.
-                  </p>
+                  <h5 className='clr-primaryDark'>{Content.number.secondStep}</h5>
+                  <p>{Content.step.secondStepContent}</p>
                </div>
                <div className='flex illustration'>
                   <img src={Illustration} alt='illustration' />
-                  <div className='illustration title'>Illustration</div>
+                  <div className='illustration title'>{Content.step.illustrationTitle}</div>
 
                   <div>
-                     <h5 className='clr-primaryDark'>Illustration</h5>
-                     <p style={{ marginRight: '2rem' }}>This is a content of the steps. Can be up to three lines. </p>
+                     <h5 className='clr-primaryDark'>{Content.step.illustrationTitle}</h5>
+                     <p style={{ marginRight: '2rem' }}>{Content.step.illustrationContent}</p>
                   </div>
                </div>
             </div>
 
             <div className='top__body_tag'>
-               <div className='step__num_mobile'>3</div>
-               <div className='top__body__title'>Third Step</div>
+               <div className='step__num_mobile'>{Content.number.three}</div>
+               <div className='top__body__title'>{Content.number.thirdStep}</div>
             </div>
             {/* SEPAREATE COMPONENT MOBILE VIIEW */}
-            <div className='step__num red'>3</div>
+            <div className='step__num red'>{Content.number.three}</div>
             <div>
-               <h5 className='clr-primaryDark'>Third Step</h5>
-               <p>
-                  This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up to three lines. This is a content of the steps. Can be up to
-                  three lines.
-               </p>
+               <h5 className='clr-primaryDark'>{Content.number.thirdStep}</h5>
+               {Content.step.thirdStepContent}
             </div>
          </div>
-         <button className='step__btn btn btn__primary clr-white'>Learn More</button>
+         <button className='step__btn btn btn__primary clr-white'>{Content.button.LEARN}</button>
       </section>
    )
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+import { Content } from '../../Utils/Content'
 import { ReactComponent as Twitter } from '@Icon/media-twitter.svg'
 import { ReactComponent as Facebook } from '@Icon/media-facebook.svg'
 import { ReactComponent as Google } from '@Icon/media-google.svg'
@@ -15,10 +16,10 @@ export default function Footer() {
                <LogoFont />
             </div>
             <p className='text__paragraph clr-white'>
-               <span>Be sure to take a look at our </span>
-               <Link className='clr-primary'>Terms of Use</Link>
-               <span> and </span>
-               <Link className='clr-primary'>Privacy Policy</Link>
+               <span>{Content.footer.title}</span>
+               <Link className='clr-primary'>{Content.nav.termsUse}</Link>
+               <span>{Content.footer.sub}</span>
+               <Link className='clr-primary'>{Content.nav.privacyPolicy}</Link>
             </p>
             <div className='footer__media'>
                <Twitter />
@@ -27,29 +28,29 @@ export default function Footer() {
             </div>
          </section>
          <section className='footer__nav'>
-            <NavTitle label='Product' />
+            <NavTitle label={Content.nav.product} />
             <div className='footer__link'>
-               <Nav label='Features' />
-               <Nav label='Pricing' />
-               <Nav label='Tour' />
+               <Nav label={Content.nav.feature} />
+               <Nav label={Content.nav.pricing} />
+               <Nav label={Content.nav.tour} />
             </div>
          </section>
          <section className='footer__nav'>
-            <NavTitle label='Work' />
+            <NavTitle label={Content.nav.work} />
             <div className='footer__link'>
-               <Nav label='Our Portfolio' />
-               <Nav label='Lastest Work' />
-               <Nav label='Brands' />
+               <Nav label={Content.nav.portfolio} />
+               <Nav label={Content.nav.latestWork} />
+               <Nav label={Content.nav.brands} />
             </div>
          </section>
 
          <section className='footer__nav'>
-            <NavTitle label='Stuff' />
+            <NavTitle label={Content.nav.stuff} />
             <div className='footer__link'>
-               <Nav label='Privacy' />
-               <Nav label='Support' />
-               <Nav label='Help Desk' />
-               <Nav label='FAQ' />
+               <Nav label={Content.nav.privacy} />
+               <Nav label={Content.nav.support} />
+               <Nav label={Content.nav.helpDesk} />
+               <Nav label={Content.nav.faq} />
             </div>
          </section>
       </footer>
